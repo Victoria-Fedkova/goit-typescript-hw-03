@@ -33,7 +33,7 @@ abstract class House {
     console.log("Welcome home");
   }
 
-  public abstract openDoor(key: Key): void;
+  public abstract openDoor(key: Key): void | boolean;
 }
 
 // Мій будинок (MyHouse): Створіть клас MyHouse, який успадковується від абстрактного класу House. Реалізуйте метод openDoor у цьому класі. Якщо ключ, переданий цьому методу, збігається з ключем, збереженим як key, то двері відчиняються.
